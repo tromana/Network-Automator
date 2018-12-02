@@ -1,0 +1,55 @@
+[
+  {
+    "hostname": "cisco-csr",
+    "domain_name": "domain.local",
+    "management_ip": "10.10.10.1",
+    "area_id": "50",
+    "router_id":"1.1.1.1"
+  },
+  {
+    "hostname": "router-b",
+    "domain_name": "domain.local",
+    "management_ip": "10.0.0.2",
+    "router_id":"2.2.2.2"
+  },
+  {
+    "hostname": "router-c",
+    "domain_name": "domain.local",
+    "management_ip": "10.0.0.3",
+    "router_id":"3.3.3.3",
+    "vlans": [
+      {
+        "name": "Data",
+        "id": 100
+      },
+      {
+        "name": "Voice",
+        "id": 200
+      },
+      {
+        "name": "Server",
+        "id": 300
+      }
+    ]
+  },
+  {
+    "hostname": "switch-d",
+    "domain_name": "domain.local",
+    "management_ip": "10.0.0.4",
+    "router_id":"4.4.4.4",
+    "vlans": [
+      {
+        "name": "Data",
+        "id": 100
+      },
+      {
+        "name": "Voice",
+        "id": 200
+      },
+      {
+        "name": "Server",
+        "id": 300
+      }
+    ]
+  }
+]

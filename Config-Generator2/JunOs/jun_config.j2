@@ -1,0 +1,30 @@
+system {
+    host-name {{ host_name }};
+    name-server {{ dns_server }};
+    domain-name {{ domain_name }};
+    backup-router {{ backup_router }};
+    root-authentication {
+        encrypted-password "{{ root_password }}"; ## Secret data
+    }
+    login {
+        user {{ admin_username }} {
+            authentication {
+                encrypted-password "{{ admin_password }}"; ## Secret data
+            }
+            class super-user;
+        }
+    }
+    services {
+        telnet;
+    }
+}
+interfaces {
+    fxp0 {
+        unit 0 {
+            family inet {
+                address {{ management_address_and_prefix }};
+            }
+        }
+    }
+}
+

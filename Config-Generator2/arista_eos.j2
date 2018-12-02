@@ -1,0 +1,18 @@
+! device: arista-eos (vEOS, EOS-4.20.10M)
+!
+! boot system flash:/vEOS-lab.swi
+!
+transceiver qsfp default-mode 4x10G
+!
+hostname arista-eos
+!
+spanning-tree mode mstp
+!
+no aaa root
+!
+ip routing
+!
+router bgp {{ AS_number }}
+   neighbor {{ peer_ip }} remote-as {{AS_number}}
+   neighbor {{ peer_ip }} maximum-routes 12000
+!

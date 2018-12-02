@@ -1,0 +1,8 @@
+[
+  {
+    "hostname": "cisco-csr1kv",
+    "local_asn": "200",
+    "bgp_neighbor" : "10.10.10.1",
+    "remote_asn" : "444"
+  }
+]

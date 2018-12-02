@@ -1,0 +1,43 @@
+!
+! Just a simple Cisco IOS configuration
+!
+hostname {{ hostname }}
+!
+ip domain-name {{ domain_name }}
+!
+interface Loopback0
+ description Management Interface
+ ip address {{ management_ip }} 255.255.255.255
+!
+interface GigabitEthernet2 
+ description external interface
+ ip address dhcp
+!
+router ospf {{ area_id }}
+ router-id {{ router_id }}
+ log-adjacency-changes
+!
+router eigrp {{ area_id }}
+ passive-interface GigabitEthernet2
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!

@@ -1,0 +1,12 @@
+[
+  {
+    "host_name": "Juniper-A",
+    "dns_server" : "10.10.10.1",
+    "domain_name": "domain.networkstack.com",
+    "backup_router": "176.18.0.1",
+    "root_password": "JuNoS12!",
+    "admin_username": "admin",
+    "admin_password": "AdMin!@#",
+    "management_address_and_prefix": "13.3.3.4/23"
+  }
+]

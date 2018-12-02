@@ -1,0 +1,9 @@
+---
+host_name: JunRtr
+dns_server: 18.16.52.68
+domain_name: domain.junper.net
+backup_router: 19.16.1.24
+root_password: $1$hKWBk3fb$AzrueuuQZ5/Xaz1fAgDHF/ 
+admin_username: admin 
+admin_password: $1$hKWBk3fb$AzrueuuQZ5/Xaz1fAgDHF/ # password1
+management_address_and_prefix: 12.12.6.25/21
