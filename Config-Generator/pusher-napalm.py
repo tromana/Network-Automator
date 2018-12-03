@@ -138,5 +138,5 @@ if __name__ == "__main__":
     #configure_configs(load_new_cfg)
     #option = raw_input("Do you want to Commit or Discard.IF 'Y' commit or if 'n' then discard:")
     #commit_or_discard(option)
-    cfg_tomerge = "/Users/SVP/Documents/tam_cap/Config-Generator/config_output/arista-eos.cfg"
+    cfg_tomerge = raw_input("Enter the cfg file for vendor:")
     merge_cfg(cfg_tomerge)
